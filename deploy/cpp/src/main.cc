@@ -13,6 +13,7 @@
 // limitations under the License.
 
 #include <glog/logging.h>
+#include <gflags/gflags.h>
 
 #include <iostream>
 #include <string>
@@ -29,6 +30,8 @@
 #endif
 
 #include "include/object_detector.h"
+#include "opencv2/imgcodecs/legacy/constants_c.h"
+#include "opencv2/videoio/legacy/constants_c.h"
 
 
 DEFINE_string(model_dir, "", "Path of inference model");
